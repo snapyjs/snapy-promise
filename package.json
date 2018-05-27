@@ -1,7 +1,7 @@
 {
   "name": "snapy-promise",
   "description": "Take a snapshot of a promise",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/snapyjs/",
   "author": {
     "name": "Paul Pflugradt",
