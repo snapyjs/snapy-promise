@@ -16,7 +16,7 @@ test((snap) => {
     obj: {
       someProp: somePromise,
       someOtherProp: someOtherPromise
-    }
+    },
     promise: "someProp, someOtherProp"
     })
 })
