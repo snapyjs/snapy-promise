@@ -10,6 +10,11 @@ Take a snapshot of a promise - when it resolves or rejects.
 test((snap) => {
   // simple
   snap({promise: somePromise})
+  // {resolved: {{resolvedValue}}}
+
+  // plain
+  snap({promise: somePromise, plain:true})
+  // {{resolvedValue}}
 
   // transform promise to obj
   snap({
@@ -19,6 +24,10 @@ test((snap) => {
     },
     promise: "someProp, someOtherProp"
     })
+  // {
+  //  someProp: {resolved:{{resolvedValue}}}
+  //  someOtherProp: {resolved:{{resolvedValue}}}
+  // }
 })
 ```
 
